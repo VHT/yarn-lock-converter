@@ -40,6 +40,8 @@ __metadata:
     cacache: ^15.3.0
     js-yaml: ^4.1.0
     yargs: ^17.3.1
+  bin:
+    yarn-lock-converter: ./index.js
   languageName: unknown
   linkType: soft
 
