@@ -16,6 +16,9 @@ async function convert() {
     if(key[0] === '_') {
       continue;
     }
+    if(entry.version.indexOf('-use.local') >= 0) {
+      continue;
+    }
 
     const v1keys = key.split(', ').reduce((rekey, thiskey) => {
       const match = KEY_REGEX.exec(thiskey);
